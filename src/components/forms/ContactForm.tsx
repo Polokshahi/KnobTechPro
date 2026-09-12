@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { contactSchema, ContactFormValues } from '@/lib/validations';
-import { Mail, Linkedin, Globe, Send, CheckCircle2 } from 'lucide-react';
+import { Mail, Globe, Send, CheckCircle2 } from 'lucide-react';
 
 export const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);

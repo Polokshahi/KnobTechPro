@@ -3,10 +3,10 @@
 import React from 'react';
 import { servicesData } from '@/data/services';
 import { motion } from 'framer-motion';
-import { Users, Mail, Database, Linkedin, Code, Cpu, ArrowRight, Check } from 'lucide-react';
+import { Users, Mail, Database,  Code, Cpu, ArrowRight, Check } from 'lucide-react';
 import Link from 'next/link';
 
-const iconMap: Record<string, React.ComponentType<{ className?: string }>> = { Users, Mail, Database, Linkedin, Code, Cpu };
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = { Users, Mail, Database,  Code, Cpu };
 
 export const Services = () => {
   return (

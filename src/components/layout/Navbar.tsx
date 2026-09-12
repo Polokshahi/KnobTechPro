@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { MobileMenu } from '@/components/layout/MobileMenu';
 import { usePathname } from 'next/navigation';
-import logo from '../../../public/images/logo/logo.png';
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -61,7 +60,7 @@ export const Navbar = () => {
             <div className="relative">
               <div className="w-10 h-10 rounded-xl flex items-center justify-center">
                 <img
-                  src={logo.src}
+                  src={'https://i.ibb.co.com/SDvG0p7D/Untitled-400-x-400-px.png'}
                   alt="KnobTech Pro Logo"
                   className="w-full h-full object-contain rounded-full"
                 />

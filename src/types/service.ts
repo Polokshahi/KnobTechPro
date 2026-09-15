@@ -1,9 +1,11 @@
+
+import type { IconType } from 'react-icons';
+
 export interface ServiceItem {
   id: string;
-  number: string;
   title: string;
   description: string;
   features: string[];
   ctaText: string;
-  iconName: string;
+  Icon:IconType;
 }

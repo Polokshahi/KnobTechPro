@@ -6,6 +6,9 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ContactForm } from '@/components/forms/ContactForm';
 
+
+
+
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white" suppressHydrationWarning>
@@ -35,15 +38,21 @@ export default function HomePage() {
       <div className="relative flex h-full flex-col justify-between">
         <div>
           {/* Top row */}
-          <div className="mb-8 flex items-center justify-between">
-            <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 text-sm font-bold text-blue-600">
-              {service.number}
-            </span>
 
-            <div className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-400 transition-all duration-300 group-hover:border-blue-200 group-hover:bg-blue-50 group-hover:text-blue-600">
-              <ArrowUpRight className="h-4 w-4" />
-            </div>
-          </div>
+
+
+         <div className="mb-8 flex items-center justify-between">
+  <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 text-blue-600">
+    <service.Icon className="h-5 w-5" />
+  </span>
+
+  <div className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-400 transition-all duration-300 group-hover:border-blue-200 group-hover:bg-blue-50 group-hover:text-blue-600">
+    <ArrowUpRight className="h-4 w-4" />
+  </div>
+</div>
+
+
+
 
           {/* Content */}
           <h3 className="mb-3 text-xl font-bold tracking-tight text-slate-900 lg:text-[22px]">

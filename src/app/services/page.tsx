@@ -15,14 +15,32 @@ export default function ServicesPage() {
       </div>
       <div className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {servicesData.map((s) => (
-            <div key={s.id} className="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">
-              <span className="font-mono text-blue-600 font-bold">{s.number}</span>
-              <h3 className="text-xl font-bold mt-2 mb-3">{s.title}</h3>
-              <p className="text-sm text-slate-600 mb-6">{s.description}</p>
-              <Link href="/contact" className="text-blue-600 font-semibold text-sm flex items-center gap-2">Get Started <ArrowRight className="w-4 h-4" /></Link>
-            </div>
-          ))}
+          {servicesData.map((s) => {
+  const Icon = s.Icon;
+
+  return (
+    <div
+      key={s.id}
+      className="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm"
+    >
+      <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 text-blue-600">
+        <Icon className="h-5 w-5" />
+      </span>
+
+      <h3 className="text-xl font-bold mt-5 mb-3">{s.title}</h3>
+
+      <p className="text-sm text-slate-600 mb-6">{s.description}</p>
+
+      <Link
+        href="/contact"
+        className="text-blue-600 font-semibold text-sm flex items-center gap-2"
+      >
+        Get Started
+        <ArrowRight className="w-4 h-4" />
+      </Link>
+    </div>
+  );
+})}
         </div>
       </div>
       <Footer />

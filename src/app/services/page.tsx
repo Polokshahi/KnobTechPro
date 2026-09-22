@@ -3,7 +3,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { servicesData } from '@/data/services';
 import Link from 'next/link';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function ServicesPage() {
   return (
@@ -27,7 +27,7 @@ export default function ServicesPage() {
         <Icon className="h-5 w-5" />
       </span>
 
-      <h3 className="text-xl font-bold mt-5 mb-3">{s.title}</h3>
+      <h3 className="text-xl text-black font-bold mt-5 mb-3">{s.title}</h3>
 
       <p className="text-sm text-slate-600 mb-6">{s.description}</p>
 

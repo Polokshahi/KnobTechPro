@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
+import { FaLinkedin } from "react-icons/fa";
+
 
 export const Footer = () => {
   return (
@@ -7,14 +9,33 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
           <div className="lg:col-span-2">
+
+
             <Link href="/" className="flex items-center gap-2.5 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white">
-                <span className="font-bold text-lg">K</span>
+              <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white">
+               <img className={
+              'rounded-full'
+               } src="https://i.ibb.co.com/SDvG0p7D/Untitled-400-x-400-px.png" alt="KnobTech Pro logo" />
               </div>
               <span className="font-bold text-white text-lg">KnobTech <span className="text-blue-500">Pro</span></span>
             </Link>
+
+
+
             <p className="text-sm text-slate-400 max-w-sm mb-6">B2B Growth & Technology Partner helping businesses generate qualified opportunities and build scalable digital systems.</p>
             <div className="text-xs text-slate-500">© 2026 KnobTech Pro. All rights reserved.</div>
+
+            {/* logo */}
+            <div className="flex items-center gap-3 mt-6">
+
+              <Link target='_blank' href="https://www.linkedin.com/company/knobtechpro/?viewAsMember=true" className="hover:text-white">
+                <FaLinkedin className="h-6 w-6" />
+              </Link>
+
+
+
+
+            </div>
           </div>
 
           <div>

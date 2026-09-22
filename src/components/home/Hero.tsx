@@ -55,70 +55,36 @@ export const Hero = () => {
               </Link>
             </div>
 
-            {/* Trust Points */}
-            {/* <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-600">
-              <div className="flex items-center gap-2">
-                <span className="text-blue-600 font-bold">✓</span>
-                Targeted B2B prospect research
-              </div>
+          
 
-              <div className="flex items-center gap-2">
-                <span className="text-blue-600 font-bold">✓</span>
-                Verified contact data
-              </div>
+ <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+  {[
+    "Targeted B2B lead generation",
+    "Verified prospect & contact data",
+    "Decision-maker & LinkedIn research",
+    "Cold email setup & outreach",
+    "Sales & workflow automation",
+    "Custom scalable web development",
+  ].map((item) => (
+    <div
+      key={item}
+      className="group flex items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm transition-all duration-200 hover:border-blue-200 hover:shadow-md"
+    >
+      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-50 text-xs font-bold text-blue-600 transition-colors group-hover:bg-blue-600 group-hover:text-white">
+        ✓
+      </span>
 
-              <div className="flex items-center gap-2">
-                <span className="text-blue-600 font-bold">✓</span>
-                Decision-maker targeting
-              </div>
-
-              <div className="flex items-center gap-2">
-                <span className="text-blue-600 font-bold">✓</span>
-                Custom automation & web development
-              </div>
-
-
-
-              <div className="flex items-center gap-2">
-                <span className="text-blue-600 font-bold">✓</span>
-                Cold email campaign management
-              </div>
-
-
-
-            </div> */}
-
-            <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-600">
-  <div className="flex items-center gap-2">
-    <span className="text-blue-600 font-bold">✓</span>
-    Targeted B2B lead generation
-  </div>
-
-  <div className="flex items-center gap-2">
-    <span className="text-blue-600 font-bold">✓</span>
-    Verified prospect & contact data
-  </div>
-
-  <div className="flex items-center gap-2">
-    <span className="text-blue-600 font-bold">✓</span>
-    Decision-maker & LinkedIn research
-  </div>
-
-  <div className="flex items-center gap-2">
-    <span className="text-blue-600 font-bold">✓</span>
-    Cold email setup & outreach
-  </div>
-
-  <div className="flex items-center gap-2">
-    <span className="text-blue-600 font-bold">✓</span>
-    Sales & workflow automation
-  </div>
-
-  <div className="flex items-center gap-2">
-    <span className="text-blue-600 font-bold">✓</span>
-    Custom scalable web development
-  </div>
+      <span className="font-medium">
+        {item}
+      </span>
+    </div>
+  ))}
 </div>
+
+
+
+
+
           </motion.div>
 
           {/* Prospect Intelligence Dashboard */}

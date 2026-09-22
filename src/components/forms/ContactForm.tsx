@@ -4,7 +4,13 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { contactSchema, ContactFormValues } from '@/lib/validations';
-import { Mail, Globe, Send, CheckCircle2 } from 'lucide-react';
+import { Mail, Globe, Send, CheckCircle2, 
+ } from 'lucide-react';
+
+ import { FaMapMarkerAlt } from "react-icons/fa";
+ import { FaWhatsapp } from "react-icons/fa";
+
+
 
 export const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -28,11 +34,47 @@ export const ContactForm = () => {
 
           <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
             <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center"><Mail className="w-5 h-5" /></div>
+
             <div>
               <div className="text-xs font-bold text-slate-400 uppercase">Direct Email</div>
-              <div className="text-sm font-bold text-slate-900">contact@knobtechpro.com</div>
+              <div className="text-sm font-bold text-slate-900">polok@knobtechpro.online</div>
             </div>
+
+
           </div>
+
+
+
+          {/* Whatsapp Number */}
+
+           <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+            <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center"><FaWhatsapp className="w-5 h-5" /></div>
+
+            <div>
+              <div className="text-xs font-bold text-slate-400 uppercase">WhatsApp/Call</div>
+              <div className="text-sm font-bold text-slate-900">+8801718175422</div>
+            </div>
+
+
+          </div>
+
+{/* Location */}
+
+           <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200">
+            <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+              <FaMapMarkerAlt className="w-5 h-5" />
+              
+              </div>
+
+            <div>
+              <div className="text-xs font-bold text-slate-400 uppercase">Location</div>
+              <div className="text-sm font-bold text-slate-900">Dhaka, Bangladesh</div>
+            </div>
+
+
+          </div>
+
+          
         </div>
 
 

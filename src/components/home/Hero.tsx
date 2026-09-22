@@ -56,7 +56,7 @@ export const Hero = () => {
             </div>
 
             {/* Trust Points */}
-            <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-600">
+            {/* <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-600">
               <div className="flex items-center gap-2">
                 <span className="text-blue-600 font-bold">✓</span>
                 Targeted B2B prospect research
@@ -86,7 +86,39 @@ export const Hero = () => {
 
 
 
-            </div>
+            </div> */}
+
+            <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-600">
+  <div className="flex items-center gap-2">
+    <span className="text-blue-600 font-bold">✓</span>
+    Targeted B2B lead generation
+  </div>
+
+  <div className="flex items-center gap-2">
+    <span className="text-blue-600 font-bold">✓</span>
+    Verified prospect & contact data
+  </div>
+
+  <div className="flex items-center gap-2">
+    <span className="text-blue-600 font-bold">✓</span>
+    Decision-maker & LinkedIn research
+  </div>
+
+  <div className="flex items-center gap-2">
+    <span className="text-blue-600 font-bold">✓</span>
+    Cold email setup & outreach
+  </div>
+
+  <div className="flex items-center gap-2">
+    <span className="text-blue-600 font-bold">✓</span>
+    Sales & workflow automation
+  </div>
+
+  <div className="flex items-center gap-2">
+    <span className="text-blue-600 font-bold">✓</span>
+    Custom scalable web development
+  </div>
+</div>
           </motion.div>
 
           {/* Prospect Intelligence Dashboard */}

@@ -1,11 +1,15 @@
-import { MetadataRoute } from 'next';
+
+import { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
+      userAgent: "*",
+      allow: "/",
     },
-    sitemap: 'https://knobtechpro.com/sitemap.xml',
+    sitemap: "https://knobtechpro.com/sitemap.xml",
   };
 }
+

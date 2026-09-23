@@ -49,7 +49,7 @@ export const Footer = () => {
             
             <div className="flex items-center gap-3 mt-6">
 
-              <Link target='_blank' href="https://www.facebook.com/profile.php?id=61582140315968" className="hover:text-blue-500">
+              <Link target='_blank' href="https://github.com/Polokshahi" className="hover:text-blue-500">
                 <FaGithub className="h-6 w-6" />
               </Link>
             </div>

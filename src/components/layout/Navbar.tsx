@@ -38,7 +38,7 @@ export const Navbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all opacity-85  duration-300  ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all   duration-300  ${
           scrolled
             ? 'bg-white/95 backdrop-blur-xl border-b border-slate-200/80 shadow-[0_4px_24px_rgba(15,23,42,0.06)]'
             : 'bg-white/80 backdrop-blur-md border-b border-transparent'

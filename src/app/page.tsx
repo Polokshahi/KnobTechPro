@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ContactForm } from '@/components/forms/ContactForm';
 
-import {ClientReviews} from '../app/client-reviews/page';
+import ClientReviews from '../app/client-reviews/page';
 
 
 

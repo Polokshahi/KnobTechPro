@@ -264,6 +264,9 @@ export const ContactForm = () => {
                   <option value="Custom Web Development">
                     Custom Web Development
                   </option>
+                  <option value="Others">
+                    Others
+                  </option>
                 </select>
 
                 {errors.serviceNeeded && (
@@ -297,6 +300,9 @@ export const ContactForm = () => {
                   </option>
                   <option value="Multiple Services">
                     Multiple Services
+                  </option>
+                  <option value="Others">
+                    Others
                   </option>
                 </select>
 

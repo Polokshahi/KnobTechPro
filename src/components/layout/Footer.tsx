@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+
 
 
 export const Footer = () => {
@@ -26,16 +28,31 @@ export const Footer = () => {
             <div className="text-xs text-slate-500">© 2026 KnobTech Pro. All rights reserved.</div>
 
             {/* logo */}
-            <div className="flex items-center gap-3 mt-6">
+            <div className="flex items-center gap-3 ">
 
-              <Link target='_blank' href="https://www.linkedin.com/company/knobtechpro/?viewAsMember=true" className="hover:text-white">
+              <div className="flex items-center gap-3 mt-6 ">
+
+              <Link target='_blank' href="https://www.linkedin.com/company/knobtechpro/?viewAsMember=true" className="hover:text-blue-500">
                 <FaLinkedin className="h-6 w-6" />
               </Link>
+            </div>
 
 
+            <div className="flex items-center gap-3 mt-6">
 
+              <Link target='_blank' href="https://www.facebook.com/profile.php?id=61582140315968" className="hover:text-blue-500">
+                <FaFacebook className="h-6 w-6" />
+              </Link>
+            </div>
 
             </div>
+
+
+
+
+
+
+
           </div>
 
           <div>

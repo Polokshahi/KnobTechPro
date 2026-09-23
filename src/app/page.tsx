@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ContactForm } from '@/components/forms/ContactForm';
 
+import {ClientReviews} from '../app/client-reviews/page';
+
 
 
 
@@ -20,13 +22,7 @@ export default function HomePage() {
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-4">Core Services</h2>
             <p className="text-lg text-slate-600">From targeted prospect research to outbound campaigns and custom technology.</p>
           </div>
-
-
-
-
-
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
   {servicesData.slice(0, 3).map((service) => (
     <div
       key={service.id}
@@ -76,6 +72,17 @@ export default function HomePage() {
       </div>
     </div>
   ))}
+</div>
+
+
+
+{/* Reviews Section */}
+
+
+<div>
+
+  <ClientReviews />
+
 </div>
 
 

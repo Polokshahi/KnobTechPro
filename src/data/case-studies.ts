@@ -1,46 +1,151 @@
-import { CaseStudy } from '@/types/case-study';
 
-export const caseStudiesData: CaseStudy[] = [
+import { CaseStudy } from "@/types/case-study";
+
+export const caseStudiesData:CaseStudy[] = [
   {
-    id: 'saas-lead-gen',
-    slug: 'saas-lead-gen-engine',
-    title: 'B2B Lead Generation & Enrichment Engine',
-    industry: 'SaaS',
-    challenge: 'A scaling B2B SaaS company was struggling with low-quality outbound lists, resulting in high bounce rates and wasted sales hours spent on manual prospecting.',
-    solution: 'Designed and implemented an automated research and verification pipeline combining Apollo intelligence, LinkedIn Sales Navigator filters, and 3-tier email validation.',
-    results: [
-      '25,000+ verified targeted prospects delivered',
-      '18,000+ verified decision-maker emails with <1.5% bounce rate',
-      '3 distinct ICP segments established for hyper-personalized outreach'
+    id: "b2b-lead-generation",
+    category: "B2B Lead Generation",
+    title:
+      "Targeted B2B Lead Generation and Decision-Maker Contact Research",
+    description:
+      "Built a targeted B2B lead generation database by researching ideal companies, identifying key decision-makers, and providing verified business emails, direct phone numbers, and company contact data for sales outreach.",
+    challenge:
+      "The client needed a reliable B2B prospect list but was struggling to find the right companies, identify relevant decision-makers, and collect accurate email and phone contact information.",
+    solution: [
+      "Defined the ideal customer profile (ICP) and target market",
+      "Researched and identified relevant B2B companies",
+      "Identified decision-makers by job title and seniority",
+      "Collected professional business email addresses",
+      "Collected available business and direct phone numbers",
+      "Enriched company and contact information",
+      "Verified, cleaned, and organized prospect data",
+      "Prepared CRM-ready B2B lead lists for sales outreach",
     ],
-    technologies: ['TypeScript', 'Node.js', 'Apollo API', 'PostgreSQL']
+    results: [
+      "Targeted B2B prospect database delivered",
+      "Relevant decision-makers identified",
+      "Verified email and phone contact data enriched",
+      "Clean and structured lead database",
+      "CRM-ready data for sales and outreach campaigns",
+    ],
+    tools: [
+      "Apollo",
+      "LinkedIn Sales Navigator",
+      "Google Maps",
+      "Email Verification",
+      "Google Sheets",
+    ],
   },
+
   {
-    id: 'nonprofit-decision-maker',
-    slug: 'nonprofit-executive-mapping',
-    title: 'Executive Decision-Maker Mapping',
-    industry: 'Nonprofit & Enterprise Services',
-    challenge: 'Client needed to map executive stakeholders across 500+ targeted enterprise foundations without clean directory data.',
-    solution: 'Built custom web scrapers combined with manual human verification protocols to extract organizational hierarchies and direct contact channels.',
-    results: [
-      '50 qualified enterprise organizations mapped completely',
-      '100 verified executive decision-makers cataloged',
-      'Segmented department and role-based contact matrix delivered'
+    id: "cold-email-deliverability",
+    category: "Cold Email Outreach",
+    title:
+      "Cold Email Deliverability Optimization from Spam to Inbox",
+    description:
+      "Improved cold email deliverability by configuring SPF, DKIM, and DMARC, reviewing the client's email infrastructure, and optimizing the sending setup to improve inbox placement.",
+    challenge:
+      "The client's cold emails were frequently landing in spam, reducing email visibility and limiting the performance of outbound sales campaigns.",
+    solution: [
+      "Audited the existing cold email infrastructure",
+      "Configured SPF email authentication",
+      "Configured DKIM email authentication",
+      "Configured DMARC policy and alignment",
+      "Reviewed domain and DNS configuration",
+      "Optimized the outbound email sending setup",
+      "Reviewed sender reputation and deliverability factors",
+      "Monitored email deliverability and adjusted the setup",
     ],
-    technologies: ['Next.js', 'TypeScript', 'Custom Web Scraping', 'Prisma']
+    results: [
+      "Improved email authentication",
+      "Stronger cold email infrastructure",
+      "Improved inbox placement",
+      "Reduced spam-folder issues",
+      "More reliable outbound email delivery",
+    ],
+    tools: [
+      "SPF",
+      "DKIM",
+      "DMARC",
+      "DNS",
+      "Email Deliverability Tools",
+      "Cold Email Platform",
+    ],
   },
+
   {
-    id: 'marketplace-automation',
-    slug: 'marketplace-data-extraction',
-    title: 'Automated Data Extraction & CRM Sync',
-    industry: 'B2B Marketplace',
-    challenge: 'Sales reps spent over 15 hours per week manually copying vendor data from disparate industry directories into HubSpot.',
-    solution: 'Engineered an automated data extraction and enrichment microservice that syncs verified profiles directly to the client CRM via custom APIs.',
-    results: [
-      'Automated 95% of manual research workflows',
-      'Structured 50,000+ vendor datasets in real time',
-      'Reduced sales team administrative overhead by 18 hours/week'
+    id: "apollo-sales-navigator-research",
+    category: "Apollo & Sales Navigator Research",
+    title:
+      "Apollo and LinkedIn Sales Navigator Prospect Research for CRM",
+    description:
+      "Built targeted B2B prospect databases using Apollo and LinkedIn Sales Navigator, then cleaned, enriched, and structured the data for CRM management and outbound sales campaigns.",
+    challenge:
+      "The client needed a large volume of highly targeted prospects, but manually searching, filtering, extracting, cleaning, and organizing B2B contact data was time-consuming.",
+    solution: [
+      "Built targeted prospect searches in Apollo",
+      "Used LinkedIn Sales Navigator for advanced prospect research",
+      "Applied industry, location, company-size, and job-title filters",
+      "Identified relevant decision-makers and key contacts",
+      "Collected company and prospect information",
+      "Enriched B2B contact and company data",
+      "Cleaned and standardized prospect records",
+      "Removed irrelevant and duplicate records",
+      "Structured the final dataset for CRM management",
     ],
-    technologies: ['Node.js', 'REST APIs', 'PostgreSQL', 'Workflow Automation']
-  }
+    results: [
+      "Highly targeted B2B prospect data collected",
+      "Relevant decision-makers identified",
+      "Clean and standardized contact records",
+      "CRM-ready prospect database delivered",
+      "Data prepared for sales and outbound campaigns",
+    ],
+    tools: [
+      "Apollo",
+      "LinkedIn Sales Navigator",
+      "Google Sheets",
+      "Microsoft Excel",
+      "CRM",
+    ],
+  },
+
+  {
+    id: "custom-website-development",
+    category: "Custom Web Development",
+    title:
+      "Professional Business Website and SaaS Development for Digital Growth",
+    description:
+      "Designed and developed professional business websites, landing pages, personal websites, and scalable SaaS applications to strengthen online credibility, improve user experience, and support business growth.",
+    challenge:
+      "The client needed a professional online presence to build trust, communicate their services clearly, generate leads, and provide customers with a reliable digital experience.",
+    solution: [
+      "Planned the website structure around business goals",
+      "Designed professional and responsive landing pages",
+      "Developed modern business and personal websites",
+      "Built scalable SaaS application interfaces",
+      "Created clear service and content sections",
+      "Added lead-generation and contact CTAs",
+      "Optimized the user experience for desktop and mobile",
+      "Built scalable architecture for future development",
+    ],
+    results: [
+      "Professional and trustworthy online presence",
+      "Responsive website experience",
+      "Clear presentation of business services",
+      "Improved digital credibility",
+      "Lead-generation focused website structure",
+      "Scalable foundation for future growth",
+    ],
+    tools: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "PostgreSQL",
+    ],
+  },
 ];
+
+export default caseStudiesData;
+

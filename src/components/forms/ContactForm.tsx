@@ -99,11 +99,11 @@ export const ContactForm = () => {
 
             <div>
               <div className="text-xs font-bold text-slate-400 uppercase">
-                WhatsApp/Call
+                WhatsApp
               </div>
 
-              <div className="text-sm font-bold text-slate-900">
-                +8801718175422
+              <div  className="text-sm font-bold text-slate-900">
+               <a target='_blank' href="https://wa.me/8801718175422" > +8801718175422</a>
               </div>
             </div>
           </div>

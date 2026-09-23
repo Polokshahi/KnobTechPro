@@ -1,10 +1,15 @@
+
+import { IconType } from "react-icons";
+
 export interface CaseStudy {
   id: string;
-  slug: string;
+  category: string;
   title: string;
-  industry: string;
+  description: string;
   challenge: string;
-  solution: string;
+  solution: string[];
   results: string[];
-  technologies: string[];
+  tools: string[];
 }
+
+

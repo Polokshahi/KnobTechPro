@@ -32,7 +32,7 @@ export default function ServicesPage() {
       <p className="text-sm text-slate-600 mb-6">{s.description}</p>
 
       <Link
-        href="/contact"
+        href={`/services/${s.id}`}
         className="text-blue-600 font-semibold text-sm flex items-center gap-2"
       >
         Get Started
@@ -46,4 +46,4 @@ export default function ServicesPage() {
       <Footer />
     </main>
   );
-}
+}""

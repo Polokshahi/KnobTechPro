@@ -1,11 +1,15 @@
 
-import type { IconType } from 'react-icons';
+import { IconType } from 'react-icons';
 
 export interface ServiceItem {
   id: string;
   title: string;
   description: string;
+
+  problemsSolved: string[];
+  solutions: string[];
   features: string[];
+
   ctaText: string;
-  Icon:IconType;
+  Icon: IconType;
 }

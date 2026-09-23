@@ -4,7 +4,6 @@ import { Footer } from "@/components/layout/Footer";
 import { servicesData } from "@/data/services";
 import { notFound } from "next/navigation";
 import {
-  ArrowLeft,
   ArrowRight,
   CheckCircle2,
   ChevronRight,
@@ -14,6 +13,12 @@ import {
   Workflow,
 } from "lucide-react";
 import Link from "next/link";
+
+export function generateStaticParams() {
+  return servicesData.map((service) => ({
+    slug: service.id,
+  }));
+}
 
 interface ServiceDetailsProps {
   params: Promise<{
@@ -42,7 +47,6 @@ export default async function ServiceDetails({
           HERO
       ========================================================== */}
       <section className="relative overflow-hidden border-b border-slate-200 bg-[#f8fafc]">
-        {/* Background grid */}
         <div className="pointer-events-none absolute inset-0 opacity-40">
           <div
             className="absolute inset-0"
@@ -56,12 +60,10 @@ export default async function ServiceDetails({
           />
         </div>
 
-        {/* Glow */}
         <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-blue-200/30 blur-3xl" />
         <div className="pointer-events-none absolute -right-40 top-0 h-[32rem] w-[32rem] rounded-full bg-indigo-200/20 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-4 pb-24 pt-28 sm:px-6 sm:pb-28 sm:pt-32 lg:px-8">
-          {/* Breadcrumb */}
           <div className="mb-14 flex items-center gap-2 text-sm text-slate-500">
             <Link
               href="/services"
@@ -78,25 +80,20 @@ export default async function ServiceDetails({
           </div>
 
           <div className="grid items-center gap-14 lg:grid-cols-[1fr_0.72fr] lg:gap-20">
-            {/* Hero content */}
             <div>
-              {/* Eyebrow */}
               <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-blue-600">
                 <span className="h-px w-7 bg-blue-600" />
                 Professional Service
               </div>
 
-              {/* Title */}
               <h1 className="mt-6 max-w-4xl text-4xl font-bold tracking-[-0.03em] text-slate-950 sm:text-5xl lg:text-6xl lg:leading-[1.08]">
                 {service.title}
               </h1>
 
-              {/* Description */}
               <p className="mt-7 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
                 {service.description}
               </p>
 
-              {/* CTA */}
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <Link
                   href="/contact"
@@ -116,7 +113,6 @@ export default async function ServiceDetails({
               </div>
             </div>
 
-            {/* Hero visual */}
             <div className="relative hidden lg:block">
               <div className="relative mx-auto max-w-md">
                 <div className="absolute inset-0 translate-x-5 translate-y-5 rounded-[2rem] border border-blue-100 bg-blue-50/40" />
@@ -176,7 +172,6 @@ export default async function ServiceDetails({
       <section className="border-b border-slate-200 bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-14 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24">
-            {/* Intro */}
             <div>
               <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-blue-600">
                 <Target className="h-4 w-4" />
@@ -195,7 +190,6 @@ export default async function ServiceDetails({
               </p>
             </div>
 
-            {/* Problem list */}
             <div className="divide-y divide-slate-200 border-y border-slate-200">
               {service.problemsSolved.map((problem, index) => (
                 <div
@@ -221,7 +215,6 @@ export default async function ServiceDetails({
       ========================================================== */}
       <section className="bg-[#f8fafc] py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* Header */}
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-blue-600">
               <Workflow className="h-4 w-4" />
@@ -240,7 +233,6 @@ export default async function ServiceDetails({
             </p>
           </div>
 
-          {/* Solutions */}
           <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 md:grid-cols-2">
             {service.solutions.map((solution, index) => (
               <div
@@ -270,7 +262,6 @@ export default async function ServiceDetails({
       <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-14 lg:grid-cols-[1fr_360px] lg:gap-20">
-            {/* Scope */}
             <div>
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-blue-600">
                 Service Scope
@@ -301,7 +292,6 @@ export default async function ServiceDetails({
               </div>
             </div>
 
-            {/* CTA Card */}
             <aside>
               <div className="sticky top-28 overflow-hidden rounded-2xl border border-slate-200 bg-slate-950 text-white shadow-xl">
                 <div className="p-7 sm:p-8">
